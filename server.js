@@ -9,7 +9,7 @@ key: fs.readFileSync("C:/certs/pwa-cert.pem"),
 cert: fs.readFileSync("C:/certs/pwa-cert.pem")
 };
 
-
+const generator = require('./conversation-topic-generator');
 
 // https://www.sitepoint.com/how-to-use-ssltls-with-node-js/
 
@@ -23,7 +23,7 @@ app.get('/hello',(req,res)=> res.send({cm:'What superpower would you like? To fl
 app.get('/api',(req,res)=> res.send({link:'./apidocumentation'}));
 app.get('/api/cm',(req,res)=> res.send(
     {cm:{
-        titel:'What superpower would you like? To fly or be invisible?'},
+        titel:generator.gettopic(req.query)},
         cat:"casual"
      }
 ));
