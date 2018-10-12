@@ -5,39 +5,134 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Progressive Web Apps</title>
-  <link rel="stylesheet" href="/src/css/app.css">
+  <title>ConversationBox</title>
+  <link rel="stylesheet" href="src/css/app.css">
 </head>
 <body>
 <div class="title">
-  <h1>Progressive Web Apps</h1>
+  <h1>ConversationBox</h1>
 </div>
 <div class="content">
-  <div class="course-feature" id="installable">
-    <p>They're installable (without an App Store)!</p>
+  <div class="course-feature" id="Controversial">
+    <p onclick="Controversial()">Controversial</p>
   </div>
-  <div class="course-feature" id="offline">
-    <p>They can work offline!</p>
+  <div class="course-feature" id="Food">
+    <p onclick="Food()">Food</p>
   </div>
-  <div class="course-feature" id="responsive">
-    <p>They look good on any device</p>
+  <div class="course-feature" id="Funny">
+    <p onclick="Funny()">Funny</p>
   </div>
-  <div class="course-feature" id="push">
-    <p>You can receive Push Messages...</p>
+  <div class="course-feature" id="Religion">
+    <p onclick="Religion()">Religion</p>
   </div>
-  <div class="course-feature" id="notifications">
-    <p>...and show Notifications</p>
-  </div>
-  <div class="course-feature" id="native-features">
-    <p>PWAs can access native device features like the Camera</p>
-  </div>
-  <div class="course-feature" id="more">
-    <p>And so much more!</p>
+  <div class="course-feature" id="Sponsored">
+    <p onclick="Sponsored()">Sponsored</p>
   </div>
 </div>
-<div class="start-over">
+<br/><br/>
+<div class="course-feature" id="Controversial-div" style="display: none;"><center>Är det okej att aga barn, och i så fall, vilket tillhygge hade du valt?</center></div>
+
+<div class="course-feature" id="Food-div" style="display: none;"><center>Bästa dieten, LCHF, Vegansk, Vegeratian eller 'allätare'?</center></div>
+
+<div class="course-feature" id="Funny-div" style="display: none;"><center>Vilken superkraft skulle du vilja ha, flyga eller vara osynlig?</center></div>
+
+<div class="course-feature" id="Religion-div" style="display: none;"><center>Behöver vi religion i våra liv?</center></div>
+
+<div class="course-feature" id="Sponsored-div" style="display: none;"><center>Vad har dina barn att leva för om du skulle dö?</center></div>
+
+
+<div class="start-over" style="display: none;">
   <button>Start Again!</button>
 </div>
-<script src="/src/js/app.js"></script>
+
+<script src="src/js/app.js"></script>
+<script>
+
+function Controversial() {
+    var x = document.getElementById("Controversial-div");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    var x = document.getElementById("Food-div");
+        x.style.display = "none";
+    var x = document.getElementById("Funny-div");
+        x.style.display = "none";
+    var x = document.getElementById("Religion-div");
+        x.style.display = "none";
+    var x = document.getElementById("Sponsored-div");
+        x.style.display = "none";
+}
+
+function Food() {
+    var x = document.getElementById("Food-div");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    var x = document.getElementById("Controversial-div");
+        x.style.display = "none";
+    var x = document.getElementById("Funny-div");
+        x.style.display = "none";
+    var x = document.getElementById("Religion-div");
+        x.style.display = "none";
+    var x = document.getElementById("Sponsored-div");
+        x.style.display = "none";
+}
+
+function Funny() {
+    var x = document.getElementById("Funny-div");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    var x = document.getElementById("Food-div");
+        x.style.display = "none";
+    var x = document.getElementById("Controversial-div");
+        x.style.display = "none";
+    var x = document.getElementById("Religion-div");
+        x.style.display = "none";
+    var x = document.getElementById("Sponsored-div");
+        x.style.display = "none";
+}
+
+function Religion() {
+    var x = document.getElementById("Religion-div");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    var x = document.getElementById("Food-div");
+        x.style.display = "none";
+    var x = document.getElementById("Controversial-div");
+        x.style.display = "none";
+    var x = document.getElementById("Funny-div");
+        x.style.display = "none";
+    var x = document.getElementById("Sponsored-div");
+        x.style.display = "none";
+}
+
+function Sponsored() {
+    var x = document.getElementById("Sponsored-div");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    var x = document.getElementById("Food-div");
+        x.style.display = "none";
+    var x = document.getElementById("Controversial-div");
+        x.style.display = "none";
+    var x = document.getElementById("Funny-div");
+        x.style.display = "none";
+    var x = document.getElementById("Religion-div");
+        x.style.display = "none";
+}
+
+</script>
 </body>
 </html>

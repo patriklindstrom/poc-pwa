@@ -44,6 +44,18 @@ function animate() {
   }, 12000);
 
   setTimeout(function () {
+    courseFeatureElements[7].classList.add('animate-in');
+  }, 12000);
+  
+  setTimeout(function () {
+    courseFeatureElements[8].classList.add('animate-in');
+  }, 12000);
+  
+  setTimeout(function () {
+    courseFeatureElements[9].classList.add('animate-in');
+  }, 12000);
+
+  setTimeout(function () {
     button.classList.add('animate-in');
   }, 13500);
 }

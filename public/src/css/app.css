@@ -4,7 +4,14 @@ body, html {
 }
 
 .animate-in {
-  animation: fade-slide 1.5s forwards;
+  animation: fade-slide 0.25s forwards;
+}
+
+
+
+.cat-Food {
+  background-color: #4286f4;
+
 }
 
 .title {
@@ -42,24 +49,24 @@ body, html {
   margin: 10px auto;
 }
 
-#installable {
-  background-color: #d3ff7b;
+#Controversial {
+  background-color: #4286f4;
 }
 
-#offline {
-  background-color: #9ce9ff;
+#Food {
+  background-color: #912504;
 }
 
-#responsive {
-  background-color: #ffaf8a;
+#Funny {
+  background-color: #ed6238;
 }
 
-#push {
-  background-color: #fff395;
+#Religion {
+  background-color: #e8d937;
 }
 
-#notifications {
-  background-color: #ffcedf;
+#Sponsored {
+  background-color: #48ed40;
 }
 
 #native-features {
@@ -68,6 +75,11 @@ body, html {
 
 #more {
   background-color: #afffc3;
+}
+
+center {
+  font-style: italic;
+  font-size: 30px;
 }
 
 .start-over button {
