@@ -1,0 +1,13 @@
+{
+    "name": "ConversationBox",
+    "short_name": "CB",
+    "description": "Need help talking? This site got you covered!",
+    "theme_color": "#f5f8fa",
+    "background_color": "white",
+    "display": "standalone",
+    "Scope": "./",
+    "start_url": "index.html",
+   
+    
+    "splash_pages": null
+  }

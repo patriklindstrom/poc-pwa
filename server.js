@@ -1,4 +1,20 @@
 
+
+// https://www.sitepoint.com/how-to-use-ssltls-with-node-js/
+const https = require("https"),
+fs = require("fs");
+
+const options = {
+key: fs.readFileSync("C:/certs/pwa-cert.pem"),
+cert: fs.readFileSync("C:/certs/pwa-cert.pem")
+};
+
+
+
+// https://www.sitepoint.com/how-to-use-ssltls-with-node-js/
+
+
+
 const express = require('express');
 var path = require('path');
 const app = express();
@@ -19,4 +35,6 @@ app.get('/api/cm',(req,res)=> res.send(
         res.sendFile(path.join(__dirname,'public/index.html'))
     })
 
-app.listen(process.env.PORT || 8080,()=>console.log('Listening'));
+app.listen(process.env.PORT || 8000,()=>console.log('Listening'));
+
+https.createServer(options, app).listen(8080);
