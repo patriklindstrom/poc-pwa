@@ -4,7 +4,7 @@ body, html {
 }
 
 .animate-in {
-  animation: fade-slide 0.25s forwards;
+  animation: fade-slide 0.5s forwards;
 }
 
 

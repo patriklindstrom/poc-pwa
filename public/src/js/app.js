@@ -17,47 +17,47 @@ function animate() {
 
   setTimeout(function () {
     courseFeatureElements[0].classList.add('animate-in');
-  }, 3000);
+  }, 1500);
 
   setTimeout(function () {
     courseFeatureElements[1].classList.add('animate-in');
-  }, 4500);
+  }, 2000);
 
   setTimeout(function () {
     courseFeatureElements[2].classList.add('animate-in');
-  }, 6000);
+  }, 2500);
 
   setTimeout(function () {
     courseFeatureElements[3].classList.add('animate-in');
-  }, 7500);
+  }, 3000);
 
   setTimeout(function () {
     courseFeatureElements[4].classList.add('animate-in');
-  }, 9000);
+  }, 3500);
 
   setTimeout(function () {
     courseFeatureElements[5].classList.add('animate-in');
-  }, 10500);
+  }, 4000);
 
   setTimeout(function () {
     courseFeatureElements[6].classList.add('animate-in');
-  }, 12000);
+  }, 5000);
 
   setTimeout(function () {
     courseFeatureElements[7].classList.add('animate-in');
-  }, 12000);
+  }, 5000);
   
   setTimeout(function () {
     courseFeatureElements[8].classList.add('animate-in');
-  }, 12000);
+  }, 5000);
   
   setTimeout(function () {
     courseFeatureElements[9].classList.add('animate-in');
-  }, 12000);
+  }, 5000);
 
   setTimeout(function () {
     button.classList.add('animate-in');
-  }, 13500);
+  }, 5000);
 }
 
 animate();
